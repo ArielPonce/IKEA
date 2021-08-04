@@ -143,8 +143,9 @@ font-size: medium;
     height: 60vh;
     width: 25%;
     background-image: url(../IKEA/images/bathroom.jpg);
-    background-position:right;
+    background-position:top;
     background-size: 67vh;
+    background-repeat: no-repeat;
     
     
     
