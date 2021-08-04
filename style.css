@@ -15,8 +15,8 @@ body {
 
 header{
     min-height: 70vh;
-    background-image: url(../IKEA/images/header.jpg);
-    background-size: 101% 100%;   
+    background-image: url("../IKEA/images/header.jpg");
+    background-size: 100% 100%;   
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -68,9 +68,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
     color: #4A4A4A;
-    font-size: 7vh;
+    font-size: 9vh;
+    letter-spacing: 11px;
     
 }
 main{
@@ -106,12 +107,69 @@ h2{
 .second_column{
     height: 40vh;
     width: 20%;
-    background-color: coral;
+    background-color: #ffff;
+    display:flex;
+    flex-direction:column;
+    
 }
+
+.main_lista_imagenes li{
+    list-style:none;
+    margin-bottom: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    
+}
+.main_lista_imagenes{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.lista_delivery:before {
+    content:" ";
+    width:5vh;
+    height:5vh;
+    background-image: url("C:/Users/cescp/OneDrive/Escritorio/IKEA/IKEA/icons&logo/delivery.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.lista_support:before{
+    content:" ";
+    width:5vh;
+    height:5vh;
+    background-image: url("C:/Users/cescp/OneDrive/Escritorio/IKEA/IKEA/icons&logo/support.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.lista_montage:before{
+    content:" ";
+    width:5vh;
+    height:5vh;
+    background-image: url("C:/Users/cescp/OneDrive/Escritorio/IKEA/IKEA/icons&logo/montage.png");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
 .third_column{
     height: 40vh;
     width: 30%;
-    background-color: cornflowerblue;
+    background-image: url("C:/Users/cescp/OneDrive/Escritorio/IKEA/IKEA/images/image.jpg");
+    background-position:left;
+    background-size: 67vh;
 }
 .main_image{
     height: 100%;
@@ -120,6 +178,9 @@ h2{
 footer{
     min-height: 80vh;
     background-color:#F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     
 }
 h3{
@@ -128,6 +189,8 @@ justify-content:flex-end;
 width: 20%;
 background-color: #f3f3ff;
 margin: 30px;
+align-items: flex-start;
+letter-spacing: 3px;
 
 
 color: #808080;
@@ -136,12 +199,13 @@ font-size: medium;
 .pictures{
     display: flex;
     flex-direction: row;
+    align-items: center;
     
 }
 .picture_one{
     height: 60vh;
     width: 25%;
-    background-image: url(../IKEA/images/bathroom.jpg);
+    background-image: url("../IKEA/images/bathroom.jpg");
     background-position:top;
     background-size: 67vh;
     background-repeat: no-repeat;
@@ -152,21 +216,21 @@ font-size: medium;
 .picture_two{
     height: 60vh;
     width: 25%;
-    background-image: url(../IKEA/images/kitchen.jpg);
+    background-image: url("../IKEA/images/kitchen.jpg");
     background-position:left;
     background-size: 47vh;
 }
 .picture_three{
     height: 60vh;
     width: 25%;
-    background-image: url(../IKEA/images/bedroom.jpg);
+    background-image: url("../IKEA/images/bedroom.jpg");
     background-position:left;
     background-size: 47vh;    
 }
 .picture_four{
     height: 60vh;
     width: 25%;
-    background-image: url(../IKEA/images/livingroom.jpg);
+    background-image: url("../IKEA/images/livingroom.jpg");
     background-position:bottom;
     background-size: 95vh;    
 }
@@ -181,8 +245,10 @@ h5{
 h4{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #DDDDDD;
     font-size: x-small;
+    height: 40px;
     
 }
 h6{
