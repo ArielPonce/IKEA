@@ -15,16 +15,14 @@ body {
 
 header{
     min-height: 70vh;
-    background-image: url(../IKEA/images/header.jpg); 
-    background-position: center;  
-    background-size: 105vh;
-    background-position-y: 70vh;
+    background-image: url(../IKEA/images/header.jpg);
+    background-size: 101% 100%;   
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    
-    
-        
+    align-content: space-between;      
 }
 .header_superior{
     display: flex;
@@ -54,6 +52,7 @@ header{
     list-style: none;
     justify-content: space-between;
     font-size: medium;
+    margin-left: 5%;
     
        
 }
