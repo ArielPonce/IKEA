@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 html { background-color: #f3f3ff; } 
 body {
-    min-height: 210vh;
+    max-height: 210vh;
     max-width: 1080px;
     background-color: papayawhip; 
     margin: 0 auto;
@@ -35,7 +35,6 @@ header{
 .logoikea{
     margin: 30px;
     width: 8%;
-    height: 3%;
 }
 
 .nav{
@@ -53,8 +52,12 @@ header{
     justify-content: space-between;
     font-size: medium;
     margin-left: 5%;
-    
-       
+           
+}
+.nav li:hover{
+transition: all 300ms ease-in;
+transform: scale(1.1);
+cursor: pointer;
 }
 .nave_collection_blog_contact{
     opacity: 30%;
@@ -109,8 +112,7 @@ h2{
     width: 20%;
     background-color: #ffff;
     display:flex;
-    flex-direction:column;
-    
+    flex-direction:column;  
 }
 
 .main_lista_imagenes li{
@@ -129,6 +131,11 @@ h2{
     justify-content: space-between;
     
 }
+.main_lista_imagenes li:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
 .lista_delivery:before {
     content:" ";
     width:5vh;
@@ -139,7 +146,6 @@ h2{
     display:flex;
     justify-content: center;
     align-items:center;
-    
 }
 .lista_support:before{
     content:" ";
@@ -208,11 +214,21 @@ font-size: medium;
     background-image: url("../IKEA/images/bathroom.jpg");
     background-position:top;
     background-size: 67vh;
-    background-repeat: no-repeat;
-    
-    
-    
+    background-repeat: no-repeat; 
 }
+.picture_one:hover{
+    transform: scale(1);
+    background-size: 90vh;
+    background-position-x: center;
+    background-position-y: center;
+}
+.picture_one:hover > h5{
+    transition: all 800ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
 .picture_two{
     height: 60vh;
     width: 25%;
@@ -220,6 +236,18 @@ font-size: medium;
     background-position:left;
     background-size: 47vh;
 }
+.picture_two:hover{
+    transform: scale(1);
+    background-size: 70vh;
+    background-position-x: center;
+    background-position-y: center;
+}
+.picture_two:hover > h5{
+    transition: all 800ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
 .picture_three{
     height: 60vh;
     width: 25%;
@@ -227,6 +255,18 @@ font-size: medium;
     background-position:left;
     background-size: 47vh;    
 }
+.picture_three:hover{
+    transform: scale(1);
+    background-size: 70vh;
+    background-position-x: center;
+    background-position-y: center;
+}
+.picture_three:hover >h5{
+    transition: all 800ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
 .picture_four{
     height: 60vh;
     width: 25%;
@@ -234,6 +274,18 @@ font-size: medium;
     background-position:bottom;
     background-size: 95vh;    
 }
+.picture_four:hover{
+    background-size: 165vh;
+    background-position-y: -40vh;
+    background-position-x: -55vh;
+    transform: scale(1);
+}
+.picture_four:hover > h5{
+    transition: all 800ms ease-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
 h5{
     display: flex;
     justify-content: center;
@@ -260,3 +312,125 @@ h6{
     color: #C0C0C0;
 }
 
+
+@media (max-width: 700px){
+    body{
+       height: 210vh;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .principaltittle{
+        width:100%;
+        font-size: 80%;
+    }
+
+    header{
+        width: 100%;
+        min-height: 30vh;
+    }
+    main{
+        width: 100%;
+        min-height: max-content;
+    }
+    .columns_container{
+        display: flex;
+        flex-direction: column;
+        max-height: max-content;   
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+    }
+    .first_column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        width: 100%;
+        height: 26vh;   
+    }
+    .second_column{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 10px;
+    }
+    .third_column{
+        width: 100%;
+       
+    }
+    footer{
+        width: 100%;
+        height: 100vh;
+        
+    }
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .picture_one{
+        width: 70%;
+        margin: 10px;
+        transition: all 1000ms ease-out;
+    }
+    .picture_one:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .picture_one:hover > h5{
+        opacity: 0;
+        transition: all 500ms ease-out; 
+    }
+    
+    .picture_two{
+        width: 70%;
+        margin: 10px;
+        transition: all 1000ms ease-out;
+    }
+    .picture_two:hover{
+        opacity: 1;   
+        transform: scale(1.1);
+    }
+    .picture_two:hover > h5{
+        opacity: 0;
+        transition: all 500ms ease-out; 
+    }
+
+    .picture_three{
+        width: 70%;
+        margin: 10px;
+        transition: all 1000ms ease-out;
+    }
+    .picture_three:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .picture_three:hover >h5{
+        opacity: 0;
+        transition: all 500ms ease-out; 
+    }
+    .picture_four{
+        width: 70%;
+        margin: 10px;
+        transition: all 1000ms ease-out;
+        
+    }
+    .picture_four:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .picture_four:hover > h5{
+        opacity: 0;
+        transition: all 500ms ease-out; 
+    }
+    
+    
+    
+
+
+}
